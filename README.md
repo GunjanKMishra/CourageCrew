@@ -1,2 +1,2 @@
 # CourageCrew
-Hackathon Together
+Hackathon Together .
