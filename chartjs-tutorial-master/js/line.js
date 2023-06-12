@@ -7,9 +7,9 @@ var ctx = document.getElementById("line");
 var line = new Chart(ctx, {
   type: 'line',
   data: {
-    labels: ["1965", "1970", "1975", "1980", "1985", "1990", "1995", "2000", "2005", "2010", "2015", "2020"],
+    labels: ["6 June", "7 June", "8 June", "9 June", "10 June"],
     datasets: [{
-      label: "Growth rate (%)",
+      label: "Frequency",
       lineTension: false,
       fill: false,
       backgroundColor: "rgba(2,117,216,1)",
@@ -21,7 +21,7 @@ var line = new Chart(ctx, {
       pointHoverBackgroundColor: "rgba(2,117,216,1)",
       pointHitRadius: 50,
       pointBorderWidth: 2,
-      data: [2.005, 2.090, 1.865, 1.749, 1.749, 1.736, 1.510, 1.323, 1.247, 1.203, 1.168, 1.075],
+      data: [1, 3, 4, 2, 1],
     },
     // {
     //   label: "Another Dataset",
@@ -53,6 +53,7 @@ var line = new Chart(ctx, {
       yAxes: [{
         ticks: {
           min: 0,
+          max: 10,
         },
         gridLines: {
           color: "rgba(0, 0, 0, .125)",
