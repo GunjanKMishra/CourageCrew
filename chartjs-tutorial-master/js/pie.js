@@ -7,7 +7,7 @@ var ctx = document.getElementById("pie").getContext('2d');
 var pie = new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ["0-14", "15-24", "25-49", "50 and over"],
+    labels: ["4.6", "3.5", "6.2", "4.1"],
     datasets: [{
       backgroundColor: [
         "#2ecc71",

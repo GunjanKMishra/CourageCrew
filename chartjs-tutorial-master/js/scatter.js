@@ -8,21 +8,20 @@ var scatter = new Chart(ctx, {
   type: 'scatter',
   data: {
             datasets: [{
-                label: 'Comparison (population in billions, age in years)',
+                label: 'Comparison (Haemoglobin in g/dL, Months)',
                 fill: false,
                 showLine: false,
                 backgroundColor: "red",
                 borderColor: "transparent",
                 pointBackgroundColor: ['red', 'red', 'red', 'red', 'red', 'red', 'red', 'red'],
                 data: [
-                  { x: 7.71, y: 72.58 }, 
-                    { x: 7.13, y: 70.69 }, 
-                    { x: 6.54, y: 67.94 }, 
-                    { x: 5.50, y: 64.51 },
-                    { x: 4.96, y: 63.27 }, 
-                    { x: 3.41, y: 54.08 }, 
-                    { x: 2.98, y: 49.76 }, 
-                    { x: 1.78, y: 34.10 }, 
+                  { y: 14, x:1 }, 
+                    { y: 13.5, x:2 }, 
+                    { y: 11.5, x: 3}, 
+                    { y: 11, x: 4},
+                    { y: 10.4, x: 5}, 
+                    { y: 10, x: 6}, 
+                    
                 ]
             }]
         },
@@ -35,9 +34,16 @@ var scatter = new Chart(ctx, {
                     type: 'linear',
                     position: 'bottom',
                     ticks: {
-                    beginAtZero: true
+                    beginAtZero: 0
                     }
-                }]
+                }],
+              yAxes: [{
+                    type:'linear',
+                    
+                    ticks: {
+                      beginAtZero: 2
+                    }
+              }]
             }
         }
     });

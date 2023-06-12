@@ -7,24 +7,24 @@ var ctx = document.getElementById("bar");
 var bar = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["2000", "2005", "2010", "2015", "2020"],
+    labels: ["6 June", "7 June", "8 June", "9 June", "10 June"],
     datasets: [{
-      label: "India",
+      label: "Morning",
       backgroundColor: "dodgerblue",
       borderColor: "transparent",
-      data: [1057, 1148, 1234, 1310, 1380],
+      data: [98.6, 98.3, 98.5, 98.4, 98.8],
     },
     {
-      label: "China",
+      label: "Afternoon",
       backgroundColor: "purple",
       borderColor: "transparent",
-      data: [1291, 1331, 1369, 1407, 1439],
+      data: [98.9, 98.4, 98.5, 98.3, 98.7],
     },
     {
-      label: "United States",
+      label: "Night",
       backgroundColor: "red",
       borderColor: "transparent",
-      data: [282, 295, 309, 321, 331],
+      data: [98.8, 98.5, 98.1, 98.5, 98.6],
     },
     ],
   },
@@ -43,7 +43,7 @@ var bar = new Chart(ctx, {
       }],
       yAxes: [{
         ticks: {
-          min: 0,
+          min: 94,
         },
         gridLines: {
           display: true
