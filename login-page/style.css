@@ -11,13 +11,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #dde5f4;
+  background: #bfebfa;
   height: 100vh;
 }
 
 .screen-1 {
   background: #f1f7fe;
   padding: 2em;
+  padding-bottom: 0rem;
   display: flex;
   flex-direction: column;
   border-radius: 30px;
