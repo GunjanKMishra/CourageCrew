@@ -422,6 +422,10 @@
     top: 25px;
     left: 230px;
   }
+  section{
+    align-items: center;
+    margin: 0;
+  }
 </style>
 
 <style>
@@ -445,10 +449,77 @@
     left:50px;;
   }
 </style>
-
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/flaticon.css" type="text/css" />
+  <link rel="stylesheet" href="css/nice-select.css" type="text/css" />
+  <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
 <body bgcolor="#B0E0E6">
+    <!-- Header Section Begin -->
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <ul class="header__top__left">
+                <li><i class="fa fa-phone"></i> 91- 725456769</li>
+                <li><i class="fa fa-map-marker"></i> New Delhi, India</li>
+                <li><i class="fa fa-clock-o"></i> 24/7 Available</li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <div class="header__top__right">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="header__logo" style="padding-top: 5px; padding-bottom: 5px; margin: 0px;">
+              <a href="./index.html" class="logo-size"><img src="nlogo.jpg" alt="logo"></a>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div class="header__menu__option" style="padding-top: 15px; padding-bottom: 5px;">
+              <nav class="header__menu">
+                <ul>
+                  <li class="active"><a href="./index.html" id="home" onmouseover="underline()">Home</a></li>
+                  <li><a href="./types.html">Types</a></li>
+                  <li>
+                    <a href="./myths.html" id="pages" onmouseover="underline()">Myths</a>
+                  </li>
+                  
+                  <li><a href="./services.html" id="community" onmouseover="underline()">Community</a></li>
+                  
+                  
+                  <li><a href="./blog.html" id="news" onmouseover="underline()">News</a></li>
+                  <li><a href="./contact.html" id="contact" onmouseover="underline()">Contact</a></li>
+                </ul>
+              </nav>
+              <div class="header__btn">
+                <a href="chartjs-tutorial-master/index.html" class="primary-btn" id="hov" onmouseover="mouse_over()" onmouseout="mouse_out()">TRACKER</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="canvas__open">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
 
   <h1 class="beautiful-heading" style="font-family: Trebuchet MS, sans-serif">TYPES OF CANCERS</h1>
 
@@ -463,7 +534,7 @@
   <div class="image-container">
     <img class="imagec" src=".\types1.jpg" alt="cancer">
 </div>
-  
+  <section>
   <div class="card1">
     <a href="./lungs.html">
 
@@ -477,7 +548,6 @@
       Primarily caused by smoking, but it can also develop in 
      due to exposure to environmental pollutants or genetic factors.</p>
   </div>
-  
   <div class="card2">
     <a href="breast.html">
 
@@ -590,6 +660,25 @@
     Types of blood cancer include leukemia, lymphoma, and multiple myeloma. 
     </p>
 </div>
+</section>
+<script>
+  function mouse_over(){
+    document.getElementById("hov").style.backgroundColor="#13a2b7";
+    document.getElementById("hov").style.color="#111111";
+    document.getElementById("hov").style.textDecoration="none";
+  }
+  function mouse_out(){
+    document.getElementById("hov").style.backgroundColor="white";
+  }
+  function underline(){
+    document.getElementById("home").style.textDecoration="none";
+    document.getElementById("about").style.textDecoration="none";
+    document.getElementById("community").style.textDecoration="none";
+    document.getElementById("pages").style.textDecoration="none";
+    document.getElementById("news").style.textDecoration="none";
+    document.getElementById("contact").style.textDecoration="none";
+  }
+</script>
 </body>
 
 </html>
