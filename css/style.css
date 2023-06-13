@@ -111,6 +111,9 @@ ol {
 	padding: 0;
 	margin: 0;
 }
+#txt-badhao{
+	font-size: 20px;
+}
 
 /*---------------------
   Helper CSS
@@ -644,7 +647,8 @@ ol {
 }
 
 .services .section-title span {
-	color: #13a2b7;
+	color: black;
+	font-size: 55px;
 }
 
 .services .section-title h2 {
