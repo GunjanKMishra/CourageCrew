@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Chart.js Tutorial</title>
+    <title>Tracker</title>
 
     <!-- Chart.js import -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
@@ -31,17 +31,15 @@
 
   <body id="page-top">
 
-    
-
     <div id="wrapper">
-      
+
       <div id="content-wrapper">
 
         <div class="container-fluid">
 
           <center>
           	<h2>Health Status of Patient</h2>
-          	<h4>Vivan Saxena</h4>
+          	<h4>Aditi Saxena</h4>
           </center>
 
           <p></p>
@@ -51,69 +49,63 @@
 			  	table-layout:fixed;
 			}
           </style>
-            
 
           	<!-- DataTables Example -->
             <div class="card mb-3">
               <div class="card-header">
                 <i class="fas fa-table"></i>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, neque non! Quas, consequatur hic, distinctio sint iste est non ipsum blanditiis eos fugiat alias atque voluptat</div>
+                Details of the Patient
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table table-bordered" id="dataTable">
                     <thead>
                       <tr>
-                        <th>lorem
+                        <th>Patient's Name
                         </th>
-                        <th>0-14</th>
-                        <th>15-24</th>
-                        <th>25-49</th>
-                        <th>50 and over</th>
+                        <th>Aditi Saxena</th>
+                        <th>Age</th>
+                        <th>50 years</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>A</td>
-                        <td>222.5</td>
-                        <td>15.4</td>
-                        <td>36.6</td>
-                        <td>24.5</td>
+                        <td>Height</td>
+                        <td> 155cm</td>
+                        <td>Weight</td>
+                        <td>60kg</td>
+                        
                       </tr>
                       <tr>
-                        <td>B</td>
-                        <td>40.3</td>
-                        <td>19.3</td>
-                        <td>29.2</td>
-                        <td>11.2</td>
+                        <td>Cancer Diagnosis and stage</td>
+                        <td>Breast Cancer with stage I</td>
+                        <td>Doctor's Name</td>
+                        <td>Dr. Rohan Sharma</td>
+                        
                       </tr>
                       <tr>
-                        <td>C</td>
-                        <td>23.9</td>
-                        <td>16.5</td>
-                        <td>36.2</td>
-                        <td>23.4</td>
+                        <td>Haemoglobin level (latest)</td>
+                        <td>11.6mg/L</td>
+                        
+                        <td>RBC Count (latest)</td>
+                        <td>4 million per mm^3
+                        </td>
                       </tr>
                       <tr>
-                        <td>D</td>
-                        <td>16.1</td>
-                        <td>10.3</td>
-                        <td>34.1</td>
-                        <td>39.6</td>
+                        <td> Cancer Diagnosed on</td>
+                        <td> 13 April 2023</td>
+                        <td>First Chemotherapy session on</td>
+                        <td>14 May 2023</td>
                       </tr>
                       <tr>
-                        <td>E</td>
-                        <td>18.1</td>
-                        <td>13.0</td>
-                        <td>33.0</td>
-                        <td>35.9</td>
+                        
+                        <td>Last chemotherapy session conducted</td>
+                        <td>7 June 2023</td>
+                        <td>Doctor's Appointment</td>
+                        <td>12 June</td>
+                        
+                        
                       </tr>
-                      <tr>
-                        <td>F</td>
-                        <td>23.6</td>
-                        <td>14.3</td>
-                        <td>33.6</td>
-                        <td>28.5</td>
-                      </tr>
+                      
                     </tbody>
                   </table>
                 </div>
@@ -150,7 +142,7 @@
             <div class="col-lg-6">
               <div class="card mb-3">
                 <div class="card-header">
-                  Variation of Haemoglobin level per month</div>
+                  Variation of Haemoglobin level (mg/L) per month</div>
                 <div class="card-body">
                   <canvas id="scatter"></canvas>
                 </div>
@@ -161,7 +153,7 @@
             <div class="col-lg-6">
               <div class="card mb-3">
                 <div class="card-header">
-                  RBC Count as per test conducted </div>
+                  RBC Count (in million per mm^3) as per test conducted </div>
                 <div class="card-body">
                   <canvas id="pie" width="100%" height="50"></canvas>
                 </div>
@@ -180,6 +172,10 @@
     <script src="js/bar.js"></script>
     <script src="js/scatter.js"></script>
     <script src="js/pie.js"></script>
+
+
+
+    
 
   </body>
 
