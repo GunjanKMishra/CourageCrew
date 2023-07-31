@@ -14,7 +14,7 @@ Made for Hack Unicorn by Divv Saxena , Riya Jain and Gunjan Mishra It is a one-s
   <li>Community support</li>
 </ol>
 
-<h1> Problem Courage Crew solves
+<h1> Problem Courage Crew solves </h1> 
   <p> Tackling Limited Awareness and Understanding of Cancer </p>
   
 <h1>Introduction</h1>
